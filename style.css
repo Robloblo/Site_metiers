@@ -3,24 +3,48 @@
 body{
     width:100vw;
     
-    background-color: rgb(187, 184, 184);
+    background-color: rgba(185, 183, 183, 0.562);
     margin: 0;
     padding: 0;
 }
 
-
+* {
+    max-width:100vw;
+}
 
 header{
     position: sticky;
     left:0;
     top:0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width:100%;
     height:6em;
     margin: 0;
     padding: 0;
+    z-index: 1;
+    border-bottom: white solid thin;
 }
-
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    height:6em;
+    
+}
+header ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home_bouton{
+    margin-left: 1em;
+    height:auto;
+    width:3em;
+}
 
 main{
 
@@ -50,6 +74,8 @@ main{
 .infoTitre h1{
     width:30%;
     text-align: center;
+    color: white;
+    text-shadow: 5px 5px 0.5em black;
 }
 
 .parcour{
@@ -63,14 +89,14 @@ main{
 
     transform: translate(-50%,0%);
     width: 80vw;
-    height: 50vh;
+    
 
     background-color: rgba(80, 80, 80, 0.884);
     
 }
 
 .parcour > div{
-    flex-basis: 42%;
+    flex-basis:42%;
     position: relative;
     height:21vh;
     background-color: rgba(255, 255, 255, 0.918);
@@ -88,6 +114,7 @@ main{
 .parcour > div:hover .cache{
     display: flex;
     flex-wrap: nowrap;
+    
   
 }
 @keyframes monAnimation {
@@ -117,9 +144,11 @@ main{
 }
 .bac3:hover{
     transform: scale(1.01);
+    box-shadow: 0 0 0.4em rgba(255, 255, 255, 0.4);
 }
 .bac5:hover{
     transform: scale(1.01);
+    box-shadow: 0 0 0.4em rgba(255, 255, 255, 0.400);
 }
 .cache a{
 
@@ -138,4 +167,30 @@ footer{
     max-width:100vw;
     margin:0;
     padding: 0;
+    
+}
+
+@media  screen and (max-width: 900px) {
+
+    header{
+        height:4em;
+    }
+    .home_bouton{
+        height: 2.8em;
+    }
+    header ul li a{
+        height: 4em;
+    }
+    .infoTitre h1{
+        width:50%;
+        font-size: 1.3em;
+        
+    }
+    .parcour > div p{
+        font-size: .8em;
+    }
+    .parcour > div{
+        flex-basis:90%;
+    }
+
 }
