@@ -2,11 +2,28 @@
 
 body{
     
-    
-    background-color: rgba(185, 183, 183, 0.562);
+    background-color: white;
+    background: linear-gradient(160deg, rgb(219, 219, 219) 0%, rgb(255, 255, 255) 40%, rgba(168, 168, 168, 0.493) 50%, rgb(255, 255, 255) 60%, rgb(202, 202, 202) 100%);
+    background-size: 300%;
     margin: 0;
     padding: 0;
+    animation: gradient 20s ease infinite;
     
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+      
+	}
+	50% {
+		background-position: 100% 50%;
+       
+	}
+	100% {
+		background-position: 0% 50%;
+        
+	}
 }
 
 * {
@@ -47,7 +64,7 @@ header ul li a{
 }
 
 .cacher{
-    animation: ease-in 0.5s cacherHeader;
+    animation: ease-in 0.3s cacherHeader;
     transform: translateY(-100%);
    
     
@@ -87,8 +104,9 @@ main{
     margin-top:5vh;
     width:100%;
     height:30vh;
-    background-color: rgb(80, 80, 80);
-
+    
+    background: rgb(144,144,144);
+    background: linear-gradient(90deg, rgba(144,144,144,1) 0%, rgb(83, 83, 83) 51%, rgba(143,143,143,1) 100%);
 }
 
 .infoTitre{
@@ -100,10 +118,12 @@ main{
 }
 
 .infoTitre h1{
+    font-size: 2em;
     width:30%;
     text-align: center;
     color: white;
-    text-shadow: 5px 5px 0.5em black;
+    text-shadow: 5px 5px .5em black;
+   
 }
 
 .parcour{
@@ -113,29 +133,38 @@ main{
     position: relative;
 
     left:50%;
-    margin-top:5vh;
+    margin-top:8vh;
 
     transform: translate(-50%,0%);
     width: 80vw;
+    border-radius: 1em;
     
-
-    background-color: rgba(80, 80, 80, 0.884);
+    box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset -5px -5px 1em rgb(100, 100, 100) ;
     
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 .parcour > div{
     flex-basis:42%;
     position: relative;
-    height:21vh;
-    background-color: rgba(255, 255, 255, 0.918);
-    box-shadow: 0 0 0.5em black;
+    min-height: 26vh;
+    background-color: rgba(226, 226, 226, 0.801);
+    
     margin-left: 4vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    font-size: 1.2em;
 
+  
+    border-radius: .5em;
+    box-shadow: 1px 1px 1em rgba(255, 255, 255, 0.973), inset 5px 5px .2em rgba(0, 0, 0, 0.363);
     
 }
-.parcour > div > *{
+.parcour > div > div {
+    margin: 1em;
+}
+.parcour > div > p{
     margin:1em;
 }
 
@@ -144,6 +173,13 @@ main{
     flex-wrap: nowrap;
     
   
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    padding: 0;
+    margin: .5em;
 }
 @keyframes monAnimation {
     from {opacity: 0; transform:scale(0.99)}
@@ -161,22 +197,25 @@ main{
     background-color: black;
     width: 100%;
     height: 100%;
+    
 }
 .bac3, .bac5{
-
-    background: rgb(138, 137, 137);
+    border-radius: .1em;
+    background: rgba(138, 137, 137, 0);
     box-shadow: 2px 0 0.3em rgba(14, 13, 13, 0.514);
     width:50%;
     border: solid black thin;
-
+    background-color: rgba(73, 73, 73, 0.993);
 }
 .bac3:hover{
     transform: scale(1.01);
-    box-shadow: 0 0 0.4em rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0.6em rgba(2, 2, 2, 0.479);
+    background-color: rgba(89, 252, 252, 0.993);
 }
 .bac5:hover{
     transform: scale(1.01);
-    box-shadow: 0 0 0.4em rgba(255, 255, 255, 0.400);
+    box-shadow: 0 0 1em rgba(7, 7, 7, 0.493);
+    background-color: rgba(252, 77, 77, 0.993);
 }
 .cache a{
 
@@ -214,7 +253,7 @@ footer{
 
 .boxCoupDeCoeur {
     
-    margin-top:5vh;
+    margin-top:8vh;
     width:100%;
     height:30vh;
     background-color: rgb(80, 80, 80);
@@ -251,15 +290,17 @@ footer{
         height: 4em;
     }
     .infoTitre h1{
-        width:50%;
-        font-size: 1.3em;
+        width:70%;
+        font-size: 2.2em;
         
     }
     .parcour > div p{
-        font-size: .8em;
+        font-size: 1.2em;
     }
     .parcour > div{
         flex-basis:90%;
     }
-
+    h3 {
+        font-size: 2em;
+    }
 }
