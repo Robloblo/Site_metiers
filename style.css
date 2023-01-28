@@ -2,8 +2,8 @@
 
 body{
     
-    background-color: white;
-    background: linear-gradient(160deg, rgb(219, 219, 219) 0%, rgb(255, 255, 255) 40%, rgba(168, 168, 168, 0.493) 50%, rgb(255, 255, 255) 60%, rgb(202, 202, 202) 100%);
+    
+    background: linear-gradient(160deg, rgba(142, 1, 155, 0.973) 0%, rgb(125, 1, 136) 40%,rgba(35, 0, 190, 0.719) 50%, rgba(178, 2, 231, 0.74) 60%,  rgba(80, 1, 63, 0.5) 100%);
     background-size: 300%;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body{
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
-      
+        
 	}
 	50% {
 		background-position: 100% 50%;
@@ -37,15 +37,19 @@ header{
     left:0;
     top:0;
     background-color: rgb(0, 0, 0);
+    
     width:100%;
     height:6em;
     margin: 0;
     padding: 0;
     z-index: 1;
-    border-bottom: white solid thin;
+    
+    
     animation: ease-in-out 0.2s apparitionHeader;
     
 }
+
+
 header ul{
     margin: 0;
     padding: 0;
@@ -63,6 +67,16 @@ header ul li a{
     
 }
 
+.logo_deco{
+    width:10vmin;
+    position: absolute;
+    z-index: -1;
+}
+._1{
+    transform: rotate(-30deg);
+    top: 10%;
+    left:2%
+}
 .cacher{
     animation: ease-in 0.3s cacherHeader;
     transform: translateY(-100%);
@@ -100,13 +114,22 @@ main{
 
 
 .boxTitre {
-    
+    position: relative;
+
+    left:50%;
     margin-top:5vh;
-    width:100%;
-    height:30vh;
+    transform: translate(-50%,0%);
+
+    width:95%;
+    height:38vh;
+    border-radius: 1em;
     
-    background: rgb(144,144,144);
-    background: linear-gradient(90deg, rgba(144,144,144,1) 0%, rgb(83, 83, 83) 51%, rgba(143,143,143,1) 100%);
+    box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset 0px 0px 0.6em rgba(100, 100, 100, 0.603) ;
+    background-color: white;
+   
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 254, 254) 20%,rgb(255, 255, 255) 80%, rgb(214, 213, 213) 100%);
+  
+    /*box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset 10px 10px 2em rgba(122, 122, 122, 0.63) ;*/
 }
 
 .infoTitre{
@@ -118,11 +141,11 @@ main{
 }
 
 .infoTitre h1{
-    font-size: 2em;
-    width:30%;
+    font-size: 1.9em;
+    width:32%;
     text-align: center;
-    color: white;
-    text-shadow: 5px 5px .5em black;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px .5em rgb(247, 244, 244);
    
 }
 
@@ -139,8 +162,8 @@ main{
     width: 80vw;
     border-radius: 1em;
     
-    box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset -5px -5px 1em rgb(100, 100, 100) ;
-    
+    box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset 0px 0px 0.6em rgba(100, 100, 100, 0.603) ;
+    background-color: white;
     padding-top: 4vh;
     padding-bottom: 4vh;
 }
@@ -256,8 +279,10 @@ footer{
     margin-top:8vh;
     width:100%;
     height:30vh;
-    background-color: rgb(80, 80, 80);
-
+    
+    background: linear-gradient(90deg, rgb(151, 151, 151) 0%, rgb(233, 233, 233) 20%,rgb(233, 233, 233) 80%, rgb(146, 145, 145) 100%);
+    
+    box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset 10px 10px 2em rgba(150, 150, 150, 0.658) ;
 }
 
 .infoCoupDeCoeur{
@@ -271,8 +296,8 @@ footer{
 .infoCoupDeCoeur h2{
     width:30%;
     text-align: center;
-    color: white;
-    text-shadow: 5px 5px 0.5em black;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 0.5em rgb(126, 126, 126);
 }
 
 
@@ -291,8 +316,11 @@ footer{
     }
     .infoTitre h1{
         width:70%;
-        font-size: 2.2em;
+        font-size: 2.0em;
         
+    }
+    .parcour{
+        width:90vw;
     }
     .parcour > div p{
         font-size: 1.2em;
