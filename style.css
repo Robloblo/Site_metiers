@@ -133,9 +133,9 @@ main{
     border-radius: 1em;
     
     box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset 0px 0px 0.6em rgba(100, 100, 100, 0.603) ;
-    background-color: rgb(98, 98, 98);
+    background-color: rgb(255, 255, 255);
    
-    background: linear-gradient(90deg, rgb(254, 254, 254) 0%, rgb(171, 171, 171) 20%,rgb(134, 129, 142) 50%,rgb(156, 156, 156) 80%, rgb(255, 255, 255) 100%);
+    /*background: linear-gradient(90deg, rgb(254, 254, 254) 0%, rgb(223, 223, 223) 20%,rgb(245, 245, 245) 50%,rgb(156, 156, 156) 80%, rgb(255, 255, 255) 100%);*/
   
     /*box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset 10px 10px 2em rgba(122, 122, 122, 0.63) ;*/
 }
