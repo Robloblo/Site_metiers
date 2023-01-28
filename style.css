@@ -172,7 +172,7 @@ main{
     width: 80vw;
     border-radius: 1em;
     
-    box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555),inset 0px 0px 0.6em rgba(100, 100, 100, 0.603) ;
+    box-shadow: 5px 5px .5em rgba(27, 27, 27, 0.555), -2px -2px 0.3em rgba(255, 255, 255, 0.603) ;
     background-color: white;
     padding-top: 4vh;
     padding-bottom: 4vh;
@@ -325,9 +325,9 @@ footer{
         height: 4em;
     }
     .infoTitre h1{
-        width:55%;
-        font-size: 1.65em;
-
+        width:100%;
+        font-size: 1.8em;
+        
         
     }
     .parcour{
@@ -355,10 +355,16 @@ footer{
 
 @media  screen and (max-width: 600px) {
     .infoTitre h1{
-        width:50%;
-        font-size: 1.5em;
+        width:60%;
+        font-size: 1.9em;
     }
-    ._2{
-        width:18vmin;
+    ._2,._1{
+        width:25vmin;
+    }
+    header{
+        height: 8vh;
+    }
+    header ul li , header ul li a{
+        height: 8vh;
     }
 }
